@@ -14,7 +14,7 @@ export default function Page({params}){
 
 	useEffect(() => {
 		getProductsDetail()
-	}, [])
+	},[])
 
 	const getProductsDetail = async () => {
 		let productData = await fetch(`http://localhost:3000/api/products/${productId}`)
