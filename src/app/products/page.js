@@ -29,7 +29,7 @@ export default async function Page() {
 				</thead>
 				<tbody>
 						{
-							products.map((item) => (<tr>
+							products.map((item) => (<tr key={item._id}>
 								<td>{item.name}</td>
 								<td>{item.price}</td>
 								<td>{item.color}</td>
